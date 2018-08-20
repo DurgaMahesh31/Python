@@ -7,13 +7,13 @@ emp_name = "xyz" # string
 emp_id = 1234    # Integer
 emp_email = "xyz@gmail.com"  # string
 emp_salary = 23456.78  #float
-emp_address = "22/A, Street road" \
-              "Hyderabad" \
+emp_address = "22/A, Streetroad \n" \
+              "Hyderabad \n" \
               "India"
 emp_phone = 9704878431
 
 system_ip = "10.3.2.6"
 
-print(emp_name, emp_id, emp_phone,system_ip)
+print(emp_name, emp_id, emp_phone,system_ip,emp_address)
 
 
