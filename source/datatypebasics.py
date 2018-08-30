@@ -35,11 +35,11 @@ print("emptyCharacter:%s"   % name[6])
 print("empty")
 print(name[7])
 # ===================Immutable Modification and deletion data not supported ============= #
-#print("deletion not supported" )
-#name[1] = 'e'
-#del name[0]
+print("deletion not supported" )
+name[1] = 'e'
+del name[0]
 #del name
-#print(name)
+print(name)
 
 # ======================= Mutable Modification and deletion data in Object ============ #
 list_of_accounts = [ "Mahesh", "Suresh", "Naresh" ]

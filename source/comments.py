@@ -7,7 +7,7 @@ c = """ This modules is used
 print(c)
 
 d = " This is module is used " \
-    "to "
+    " to "
 print (d)
 
 
@@ -49,5 +49,12 @@ def get_db_conn(host_name, db, user, db_pass):
     :return:
     """
     pass
+
+def get_conn(a,b):
+    """
+    :param a:
+    :param b:
+    :return:
+    """
 
 #main()

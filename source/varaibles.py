@@ -30,11 +30,12 @@ print(a, b)  # 10, 20
 # db_name =
 #
 # Three variables assigned to same value
-a = b = c = 1
+a = b = c = 1.1
 print(a)
 print(b)
 print(c)
-
+c = 9
+print(c)
 print(id(a), id(b), id(c))
 #
 # Three variables to different data

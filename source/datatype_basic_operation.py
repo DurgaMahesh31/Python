@@ -5,18 +5,21 @@ salary = 120034.24
 
 streaming_bit_octal = 0o12
 streaming_bit_hex = 0x12
-print(a)
-print(salary)
+print(a)  # 2
+print(salary)  # 120034.24
+print(type(salary)) # <class 'float'>
 print(streaming_bit_octal)
 print(streaming_bit_hex)
 
 # # ============= Strings ============== #
-message = 'Hello world'
+message = "Hello world"
 message2 = "Hello world"
 
-print(message)
-print(message2)
-print(message == message2)
+print(message)  # Hello world
+print(message2) # Hello world
+print(type(message))
+print(type(message2))
+print(message is message2)  # Ture
 
 # Multi-line string
 message3 = """Hello
@@ -25,17 +28,20 @@ message3 = """Hello
             methods"""
 
 print(message3)
+print(type(message3))
 #
 message4 = "Hello this is single line string , " \
            "and it should not more than 120 " \
            "characters in same line"
 
 print(message4)
+print(type(message4))
 
 message5 = "Hello this is single line string , \nand it should not more than 120 \n" \
            "characters in same line"
 
 print(message5)
+print(type(message5))
 #
 # # ==================== List & Tuple ================== #
 list1 = [1, 20.2, "Python", [1, 3, 4]]
@@ -103,7 +109,10 @@ print(9//4.0)
 
 
 print(2**3)
+# print(1/0)
 
+print("============Zero Division by any thing ==================")
+print(0/1)
 
 # sequential data type
 # [ start[0]: end[len(object): step[1] ]
@@ -129,4 +138,80 @@ del list_lan[1:2]
 print(list_lan)
 del list_lan[:]
 print(list_lan)
+
+
+
+class_information = [
+    {"name":"xyz",
+     "dob":"13/07/2017"},
+    {"name":"yz",
+     "dob":"12/05/2017"}
+]
+
+# for var in iterable_object/Collection:
+
+for student in class_information:
+    print("student:%s"%student)
+
+count = 0
+for student in class_information:
+    if student["name"] == "yz":
+        class_information[count]["db"] = "13/06/2017"
+
+    count +=1
+
+print(class_information)
+class_information[1]['dob'] = "13/06/2017"
+print(class_information)
+student2 = class_information[1]
+print(type(student2))
+print(student2['name'],student2['dob'])
+print(class_information)
+message = "Hello world"
+message[::-1]
+print(message[4:3:-1])
+print(message[-2:6:-1])
+print(message[-1:-12:-1])
+
+
+# I want to collect list of student information in whichever the order they registered , it's not fixed
+# list of dict
+# Adding marks for math, science, language to each student
+# I need to get each subject mark by it's subject name, How you can modify the existing data type?
+
+class_information = [
+    {"name":"xyz",
+     "dob":"13/07/2017"},
+    {"name":"yz",
+     "dob":"12/05/2017"}
+]
+
+# for var in iterable_object/Collection:
+
+for student in class_information:
+    print("student:%s"%student)
+
+# count = 0
+# for student in class_information:
+#     if student["name"] == "yz":
+#         class_information[count]["db"] = "13/06/2017"
+#
+#     count +=1
+
+print(class_information)
+class_information[1]['dob'] = "13/06/2017"
+
+student2 = class_information[1]
+print(type(student2))
+print(student2['name'],student2['dob'])
+print(class_information)
+
+class_information[0]["marks"] = [60, 70, 80]
+class_information[1]["marks"] = [70,80, 100]
+
+print(class_information)
+#class_information[0]["marks"] = {'m':40,'s':50}
+print(class_information)
+
+
 
